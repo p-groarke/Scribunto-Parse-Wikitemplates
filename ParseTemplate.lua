@@ -171,7 +171,7 @@ function parseTemplates(strWikitext)
     -- From the array of token positions, process these positions to get the starting and ending positions of each template
     -- (including nesting & nested templates)
     local idx = 1
-    terminateIdx = numOpenTokens
+    local terminateIdx = numOpenTokens
     while idx <= terminateIdx do
     	local openTokenPos = arrOpenToken[idx]
     	local closeTokenPos = arrCloseToken[idx]
